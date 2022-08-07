@@ -108,6 +108,81 @@
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/exemple_colors_White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toStartOf="@id/exemple_colors_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_save"/>
+    <TextView
+        android:id="@+id/exemple_colors_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:text="#0000ff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toStartOf="@id/exemple_colors_orange"
+        app:layout_constraintStart_toEndOf="@id/exemple_colors_White"
+        app:layout_constraintTop_toBottomOf="@id/btn_save"/>
+    <TextView
+        android:id="@+id/exemple_colors_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffa500"
+        android:text="#ffa500"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/exemple_colors_blue"
+        app:layout_constraintTop_toBottomOf="@id/btn_save"/>
+    <TextView
+        android:id="@+id/exemple_colors_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:text="#ff0000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toStartOf="@id/exemple_colors_yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exemple_colors_White"/>
+    <TextView
+        android:id="@+id/exemple_colors_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:text="#ffff00"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toStartOf="@id/exemple_colors_green"
+        app:layout_constraintStart_toEndOf="@id/exemple_colors_red"
+        app:layout_constraintTop_toBottomOf="@id/exemple_colors_blue"/>
+    <TextView
+        android:id="@+id/exemple_colors_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:text="#008000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/exemple_colors_yellow"
+        app:layout_constraintTop_toBottomOf="@id/exemple_colors_orange"/>
+
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_save"
         android:layout_width="0dp"
@@ -117,5 +192,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/til_cor"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
